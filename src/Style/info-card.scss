@@ -1,0 +1,18 @@
+//INFO CARD
+.info-card {
+    color: $white-color;
+    background: linear-gradient(158.07deg, #564ECE 6.22%, #837BFF 92.27%);
+    border-radius: 11px;
+    h5 {
+        font-weight: 300;
+    }
+    p {
+        padding: 0px;
+        font-weight: 300;
+    }
+    button {
+        padding: 0.5rem 1rem;
+        font-size: 0.75rem;
+        font-weight: 300;
+    }
+}

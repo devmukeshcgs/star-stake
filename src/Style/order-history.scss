@@ -1,0 +1,501 @@
+.order-history {
+    .ohistory-section {
+        h4 {
+            font-weight: normal;
+            font-size: 21px;
+            line-height: 38px;
+            color: $white-color;
+        }
+        .nav-pills {
+            .nav-link {
+                color: #ABABAB;
+                cursor: pointer;
+                &.active {
+                    color: $blue2-light-color;
+                    background: rgba(196, 196, 196, 0.1);
+                    border-radius: 26px;
+                }
+            }
+        }
+        .ohistory-cards {
+            .ohistory-card-box {
+                padding: 3rem;
+                width: 100%;
+                background: #0B0D19;
+                box-shadow: 6px 19px 62px -8px rgba(0, 0, 0, 0.13);
+                border-radius: 31px;
+                overflow: hidden;
+                .ohistory-img {
+                    border-radius: 18px;
+                    max-height: 300px;
+                    overflow: hidden;
+                    img {
+                        height: 100%;
+                    }
+                }
+                .ohistory-text {
+                    width: 100%;
+                    .category {
+                        font-size: 16px;
+                        color: $blue2-light-color;
+                    }
+                    .stake-name {
+                        font-size: 30px;
+                        color: $white-color;
+                    }
+                    .fanart-update {
+                        font-size: 20px;
+                        line-height: 30px;
+                        color: $white-color;
+                    }
+                    .art-by {
+                        font-size: 16px;
+                        font-weight: normal;
+                        color: rgba(255, 255, 255, 0.28);
+                    }
+                    .art-name {
+                        font-weight: normal;
+                        font-size: 18px;
+                        color: $blue2-light-color;
+                    }
+                    .short-dis {
+                        position: relative;
+                        max-width: 50%;
+                        font-size: 14px;
+                        color: $white-color;
+                        a {
+                            color: $blue2-light-color!important;
+                        }
+                        &::after {
+                            content: "";
+                            width: 100%;
+                            position: absolute;
+                            bottom: 0px;
+                            height: 50px;
+                            background: rgb(11, 13, 25);
+                            background: -moz-linear-gradient(0deg, rgba(11, 13, 25, 1) 0%, rgba(11, 13, 25, 0) 100%);
+                            background: -webkit-linear-gradient(0deg, rgba(11, 13, 25, 1) 0%, rgba(11, 13, 25, 0) 100%);
+                            background: linear-gradient(0deg, rgba(11, 13, 25, 1) 0%, rgba(11, 13, 25, 0) 100%);
+                        }
+                    }
+                    .staked-amount {
+                        font-size: 18px;
+                        line-height: 38px;
+                        color: $white-color;
+                        span {
+                            color: $blue2-light-color!important;
+                        }
+                    }
+                    .time {
+                        color: rgba(255, 255, 255, 0.28);
+                    }
+                    .cta {
+                        button {
+                            min-width: 200px;
+                            padding: 0.5rem 1.5rem;
+                            font-weight: 500;
+                            font-size: 21px;
+                            text-align: center;
+                            color: $blue2-light-color;
+                            &:hover {
+                                color: $white-color !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // NFT BUKS CARDS
+        .nft-buks-cards {
+            .nft-buks-card-box {
+                padding: 1.5rem 3rem;
+                width: 100%;
+                background: #0B0D19;
+                box-shadow: 6px 19px 62px -8px rgba(0, 0, 0, 0.13);
+                border-radius: 31px;
+                overflow: hidden;
+                .nft-buks-img {
+                    border-radius: 18px;
+                    // min-width: 150px;
+                    max-width: 200px;
+                    overflow: hidden;
+                    padding-right: 2rem;
+                    img {
+                        // height: 100%;
+                        width: 100%;
+                    }
+                    .img2 {
+                        position: absolute;
+                        left: 0px;
+                        transform: translate(00%, 00%) rotate(5deg);
+                        z-index: -1;
+                    }
+                }
+                .nft-buks-text {
+                    width: 100%;
+                    .o-id {
+                        font-size: 16px;
+                        color: #494E68;
+                    }
+                    .stake-name {
+                        font-size: 21px;
+                        color: $white-color;
+                        span {
+                            font-size: 16px;
+                            color: $blue2-light-color;
+                        }
+                    }
+                    .stake-name-price {
+                        font-size: 21px;
+                        color: $blue2-light-color;
+                    }
+                    .art-by {
+                        font-size: 16px;
+                        font-weight: normal;
+                        color: rgba(255, 255, 255, 0.28);
+                    }
+                    .order-id {
+                        font-weight: normal;
+                        font-size: 18px;
+                        color: $blue2-light-color;
+                    }
+                    .short-dis {
+                        position: relative;
+                        max-width: 50%;
+                        font-size: 14px;
+                        color: $white-color;
+                        a {
+                            color: $blue2-light-color!important;
+                        }
+                        &::after {
+                            content: "";
+                            width: 100%;
+                            position: absolute;
+                            bottom: 0px;
+                            height: 50px;
+                            background: rgb(11, 13, 25);
+                            background: -moz-linear-gradient(0deg, rgba(11, 13, 25, 1) 0%, rgba(11, 13, 25, 0) 100%);
+                            background: -webkit-linear-gradient(0deg, rgba(11, 13, 25, 1) 0%, rgba(11, 13, 25, 0) 100%);
+                            background: linear-gradient(0deg, rgba(11, 13, 25, 1) 0%, rgba(11, 13, 25, 0) 100%);
+                        }
+                    }
+                    .staked-amount {
+                        font-size: 21px;
+                        color: $white-color;
+                        span {
+                            color: $blue2-light-color!important;
+                        }
+                    }
+                    .more-link {
+                        cursor: pointer;
+                        font-weight: 500;
+                        font-size: 21px;
+                        text-align: right;
+                        color: $blue2-light-color;
+                    }
+                    .tnx-id {
+                        font-weight: 500;
+                        font-size: 16px;
+                        color: #494E68;
+                    }
+                    .cta {
+                        button {
+                            min-width: 200px;
+                            padding: 0.5rem 1.5rem;
+                            font-weight: 500;
+                            font-size: 21px;
+                            text-align: center;
+                            border-width: 2px;
+                            color: $blue2-light-color;
+                            &:hover {
+                                color: $white-color !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width:$md) {
+        .ohistory-section {
+            .ohistory-cards {
+                .ohistory-card-box {
+                    padding: 1rem;
+                    width: 100%;
+                    .ohistory-img {
+                        border-radius: 18px;
+                        max-height: 300px;
+                        img {
+                            height: 100%;
+                        }
+                    }
+                    .ohistory-text {
+                        width: 100%;
+                        .category {}
+                        .stake-name {}
+                        .fanart-update {}
+                        .art-by {}
+                        .art-name {}
+                        .short-dis {
+                            max-width: 50%;
+                            a {}
+                            &::after {}
+                        }
+                        .staked-amount {
+                            span {}
+                        }
+                        .time {}
+                        .cta {
+                            button {
+                                min-width: 200px;
+                                padding: 0.5rem 1.5rem;
+                            }
+                        }
+                    }
+                }
+            }
+            .nft-buks-cards {
+                .nft-buks-card-box {
+                    padding: 1rem;
+                    .nft-buks-img {
+                        padding-right: 0px;
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width:$sm) {
+        .ohistory-section {
+            .ohistory-cards {
+                .ohistory-card-box {
+                    padding: 1rem;
+                    width: 100%;
+                    .ohistory-img {
+                        border-radius: 18px;
+                        max-height: 300px;
+                        img {
+                            height: auto;
+                            width: 100%;
+                        }
+                    }
+                    .ohistory-text {
+                        width: 100%;
+                        .category {}
+                        .stake-name {}
+                        .fanart-update {}
+                        .art-by {}
+                        .art-name {}
+                        .short-dis {
+                            max-width: 50%;
+                            a {}
+                            &::after {}
+                        }
+                        .staked-amount {
+                            span {}
+                        }
+                        .time {}
+                        .cta {
+                            button {
+                                min-width: 200px;
+                                padding: 0.5rem 1.5rem;
+                            }
+                        }
+                    }
+                }
+            }
+            .nft-buks-cards {
+                .nft-buks-card-box {
+                    padding: 1rem;
+                    .nft-buks-img {
+                        padding-right: 0px;
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.nft-buks-modal {
+    .order-id-link {
+        font-weight: normal;
+        font-size: 16px;
+        color: #494E68;
+        a {
+            text-align: right;
+            color: #564ECE !important;
+            &:hover {
+                color: #FFFFFF !important;
+            }
+        }
+    }
+    .order-img-list {
+        ul {
+            padding: 0px;
+            li {
+                list-style: none;
+                display: inline-block;
+                padding: 0.5rem;
+                img {
+                    max-width: 100px;
+                }
+            }
+        }
+    }
+    .order-item-list {
+        font-size: 21px;
+    }
+    .item {
+        font-size: 21px;
+        .stake-name {
+            color: #fff;
+            span {
+                color: #494E68;
+                font-size: 16px;
+                line-height: 38px;
+                margin-left: 10px;
+            }
+        }
+        .status {
+            color: #494E68;
+            font-size: 16px;
+            span {
+                color: #564ECE;
+                margin-left: 0px;
+            }
+        }
+        .stake-name-price {
+            color: #564ECE;
+        }
+        &.last {
+            border-top: 1.5px solid rgba(255, 255, 255, 0.14);
+        }
+    }
+    .cta {
+        text-align: center;
+        div {
+            color: #494E68;
+            a {
+                color: #564ECE!important;
+                &:hover {
+                    color: #fff
+                }
+            }
+        }
+        button {
+            min-width: 200px;
+            &.btn {
+                padding: 10px 25px !important;
+                color: #564ECE;
+                &:hover {
+                    color: #fff!important;
+                }
+            }
+        }
+    }
+    .buck-spent {
+        font-size: 16px;
+        line-height: 38px;
+        color: #494E68;
+    }
+    .ohistory-card-box {
+        .starstake {
+            font-size: 18px;
+            line-height: 32px;
+            color: #FFFFFF;
+        }
+        // width: 100%;
+        // background: #0B0D19;
+        // box-shadow: 6px 19px 62px -8px rgba(0, 0, 0, 0.13);
+        // border-radius: 31px;
+        // overflow: hidden;
+        .ohistory-img {
+            // max-height: 200px;
+            max-width: 300px;
+            overflow: hidden;
+            border-radius: 18px;
+            overflow: hidden;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .ohistory-text {
+            width: 100%;
+            .category {
+                font-size: 16px;
+                color: $blue2-light-color;
+            }
+            .stake-name {
+                font-size: 30px;
+                color: $white-color;
+            }
+            .fanart-update {
+                font-size: 20px;
+                line-height: 30px;
+                color: $white-color;
+            }
+            .art-by {
+                font-size: 16px;
+                font-weight: normal;
+                color: rgba(255, 255, 255, 0.28);
+            }
+            .art-name {
+                font-weight: normal;
+                font-size: 18px;
+                color: $blue2-light-color;
+            }
+            .reward-access {
+                font-size: 18px;
+                line-height: 27px;
+                text-align: right;
+                color: #ABABAB;
+                span {
+                    color: #564ECE;
+                }
+            }
+            .short-dis {
+                position: relative;
+                max-width: 50%;
+                font-size: 14px;
+                color: $white-color;
+                a {
+                    color: $blue2-light-color!important;
+                }
+                &::after {
+                    content: "";
+                    width: 100%;
+                    position: absolute;
+                    bottom: 0px;
+                    height: 50px;
+                    background: rgb(11, 13, 25);
+                    background: -moz-linear-gradient(0deg, rgba(11, 13, 25, 1) 0%, rgba(11, 13, 25, 0) 100%);
+                    background: -webkit-linear-gradient(0deg, rgba(11, 13, 25, 1) 0%, rgba(11, 13, 25, 0) 100%);
+                    background: linear-gradient(0deg, rgba(11, 13, 25, 1) 0%, rgba(11, 13, 25, 0) 100%);
+                }
+            }
+            .staked-amount {
+                font-size: 18px;
+                line-height: 38px;
+                color: $white-color;
+                span {
+                    color: $blue2-light-color!important;
+                }
+            }
+            .time {
+                color: rgba(255, 255, 255, 0.28);
+            }
+            .cta {
+                button {
+                    min-width: 200px;
+                    padding: 0.5rem 1.5rem;
+                    font-weight: 500;
+                    font-size: 21px;
+                    text-align: center;
+                    color: $blue2-light-color;
+                }
+            }
+        }
+    }
+}

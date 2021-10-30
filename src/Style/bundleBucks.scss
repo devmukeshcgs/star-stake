@@ -1,0 +1,111 @@
+.bundle-description-section {
+    position: relative;
+    .abs-bg-row {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0px;
+        z-index: -1;
+        .abs-bg {
+            height: 100%;
+            background: #0B0D19;
+            border-radius: 24px;
+        }
+    }
+    h4 {
+        font-weight: normal;
+        font-size: 21px;
+        line-height: 38px;
+        color: #fff;
+    }
+    .availability {
+        color: $gray8-color;
+        span {
+            color: #564ECE;
+        }
+    }
+    .add-to-cart {
+        padding: 0.75rem 1.25rem;
+        background: rgba(196, 196, 196, 0.1);
+        border-radius: 25.5px;
+        font-weight: 500;
+        font-size: 16px;
+        outline: 0px;
+        border: 0px;
+        color: $white-color;
+        color: rgba(255, 255, 255, 0.5);
+    }
+    .bundle-detail {
+        .path {
+            font-weight: normal;
+            line-height: 38px;
+            color: #ABABAB;
+        }
+        .bundle-price {
+            line-height: 38px;
+            color: #564ECE;
+        }
+        .box-address {
+            // background: #0B0D1A;
+            border-radius: 11px;
+            .text-container {
+                margin-left: 50px;
+            }
+            .created-by {
+                a {
+                    color: #564ECE;
+                }
+            }
+            .collection-edition {
+                color: #564ECE;
+            }
+            .collection-maintained {
+                span {
+                    color: #564ECE;
+                }
+            }
+            h4 {
+                font-weight: normal;
+                font-size: 21px;
+                color: #FFFFFF;
+            }
+            p {
+                color: #ABABAB;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 38px;
+            }
+            h3 {
+                font-weight: normal;
+                font-size: 21px;
+                line-height: 30px;
+                color: #FFFFFF;
+            }
+            .token-info-heading {
+                color: #494E68;
+            }
+            .token-info {
+                .secondary-col {
+                    color: #564ECE;
+                }
+            }
+        }
+    }
+    .add-address {
+        .btn {
+            width: 316px;
+            height: 73px;
+        }
+    }
+}
+
+.dark-bg {
+    background: #0B0D19;
+    border-radius: 24px;
+}
+
+.count {
+    color: #564ECE;
+}

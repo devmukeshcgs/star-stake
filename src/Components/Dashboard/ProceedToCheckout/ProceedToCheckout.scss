@@ -1,0 +1,188 @@
+
+.checkoutPage {
+  .back-link {
+    margin-top: 31px;
+    margin-bottom: 40px;
+    a {
+      margin-bottom: 28px;
+      display: inherit;
+      svg {
+        transition: all ease 0.4s;
+        &:hover {
+          margin-left: -2px;
+          transition: all ease 0.4s;
+        }
+      }
+    }
+  }
+  .liat-cart-slide {
+    .img-carrt {
+      width: 12vw;
+      min-width: 150px;
+    }
+    .list-cart-box {
+      @media (max-width: 767px) {
+        flex-wrap: wrap;
+        .delete-action {
+          flex: 0 0 100%;
+          width: 100%;
+          margin-top: 30px;
+        }
+      }
+    }
+    .text-cart-list {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      flex: 1;
+      h6 {
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 38px;
+        width: 347px;
+        margin-bottom: 20px;
+        @media screen and (max-width: 1230px) {
+          font-size: 20px;
+        }
+        @media screen and (max-width: 991px) {
+          font-size: 18px;
+          width: 100%;
+        }
+      }
+      .cart-price {
+        font-weight: normal;
+        font-size: 36px;
+        color: #564ece;
+        @media screen and (max-width: 1230px) {
+          font-size: 22px;
+        }
+        @media screen and (max-width: 991px) {
+          font-size: 18px;
+        }
+      }
+      .quantity {
+        font-weight: normal;
+        font-size: 21px;
+        align-items: center;
+        @media screen and (max-width: 1230px) {
+          font-size: 16px;
+        }
+        @media screen and (max-width: 991px) {
+          font-size: 14px;
+        }
+        .form-select {
+          width: 81px;
+          height: 34px;
+          background-color: rgba(229, 229, 229, 0.13);
+          border-radius: 22px;
+          color: #fff;
+          border: none;
+          background-position: right 1rem center;
+          background-size: 14px 17px;
+          padding: 0px 25px;
+
+          &:focus {
+            box-shadow: 0px 0px 0px 1px #000;
+          }
+          option {
+            background: #18181d;
+            color: #fff;
+            font-size: 14px;
+          }
+        }
+      }
+      .eth-text {
+        font-weight: normal;
+        font-size: 21px;
+        color: rgba(255, 255, 255, 0.23);
+        @media screen and (max-width: 1230px) {
+          font-size: 16px;
+        }
+        @media screen and (max-width: 991px) {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .delete-action {
+    align-self: center;
+    .btn {
+      border: 2px solid #564ece;
+      color: #564ece;
+      border-radius: 9px;
+      min-width: 229px;
+      height: 53px;
+      padding: 10px;
+      @media screen and (max-width: 1230px) {
+        min-width: 180px;
+        height: 45px;
+        line-height: 22px;
+      }
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+  .summary-checkout {
+    margin-left: 12vw;
+    padding-left: 48px;
+    @media (max-width: 767px) {
+      margin-left: 0;
+      padding-left: 0;
+    }
+    h5 {
+      font-weight: 500;
+      font-size: 16px;
+      color: #646464;
+    }
+    .sumary-text {
+      font-weight: 500;
+      font-size: 16px;
+      margin-bottom: 12px;
+      @media screen and (max-width: 1230px) {
+        font-size: 15px;
+      }
+      @media screen and (max-width: 991px) {
+        font-size: 14px;
+      }
+    }
+    .need-eth {
+      text-align: right;
+      margin-top: 12px;
+      font-size: 21px;
+      @media screen and (max-width: 1230px) {
+        font-size: 16px;
+      }
+      @media screen and (max-width: 991px) {
+        font-size: 14px;
+      }
+      a {
+        color: #564ece;
+      }
+      .complete-transaction {
+        margin-top: 30px;
+        .btn {
+          background: #564ece;
+          border-radius: 9px;
+          &:hover {
+            background: transparent;
+            color: #564ece;
+          }
+        }
+      }
+    }
+  }
+}
+
+.tab-active-top {
+  ul {
+    li {
+      &.op-low {
+        opacity: 0.2;
+      span{
+          background: #04050a;
+     }
+    }
+   }
+ }
+}

@@ -1,0 +1,420 @@
+//-----------Cart  css ---------------//
+.wallet-nav-item {
+    background: none !important;
+    border: none !important;
+    &:focus {
+        box-shadow: none;
+        outline: none;
+    }
+    .total-cart {
+        width: 18px;
+        height: 18px;
+        background: #fff;
+        right: -7px;
+        border-radius: 100%;
+        font-weight: bold;
+        font-size: 14px;
+        color: #564ECE;
+    }
+}
+
+.wallet-slide-right {
+    right: 0px;
+    transition: 0.8s;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.71);
+    position: fixed;
+    top: 56px;
+    bottom: 0;
+    z-index: 999999999999;
+    .bg-wallet-close {
+        background: none !important;
+        border: none !important;
+        &:focus {
+            box-shadow: none;
+            outline: none;
+        }
+    }
+    .wallet-bg {
+        width: 542px;
+        height: calc(100vh - 56px);
+        background: #0B0D19;
+        box-shadow: 6px 19px 62px -8px rgb(0 0 0 / 13%);
+        margin-right: 0;
+        margin-left: auto;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        flex-grow: 1;
+        .tab-content {
+            height: calc(100vh - 480px);
+            overflow: auto;
+            // flex-grow: 1;
+            // flex-shrink: 0;
+        }
+        .test {
+            // background-color: #564ECE;
+            flex-grow: 1;
+        }
+        .total {
+            text-align: center;
+            font-weight: 400;
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.23);
+            .amount {
+                font-weight: 600;
+                font-size: 26px;
+                text-align: center;
+                color: #564ECE;
+            }
+        }
+        .add-funds {
+            // background: #564ECE;
+            .btn {
+                width: 100%;
+                font-weight: 500!important;
+                font-size: 21px!important;
+                padding: 1rem !important;
+                border-radius: 0px !important;
+            }
+        }
+        .wallet-heading {
+            .my-wallet-dropdown {
+                position: relative;
+                cursor: pointer;
+                .drop-down-cont {
+                    z-index: 99;
+                    .hover-open-dropdown {
+                        box-shadow: 0px 4px 45px -1px rgb(86 78 206 / 36%);
+                        border-radius: 9px;
+                        width: 250px;
+                        height: 0px;
+                        overflow: hidden;
+                        top: 25px;
+                        left: 100%;
+                        opacity: 0;
+                        transition: 0.5s;
+                        background: rgba(48, 48, 48, 0.68);
+                        backdrop-filter: blur(20px);
+                        border-radius: 16px;
+                        ul {
+                            margin: 0px;
+                            li {
+                                list-style: none;
+                                display: block;
+                                width: 100%;
+                                border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+                                a {
+                                    padding: 1rem;
+                                    display: block;
+                                    font-size: 16px;
+                                    transition: 0.5s;
+                                    color: #FFFFFF;
+                                    text-decoration: none;
+                                    margin: 0px;
+                                    svg {
+                                        path {
+                                            fill: #FFFFFF;
+                                        }
+                                    }
+                                }
+                                &:nth-last-child(1) {
+                                    border-bottom: 0px solid rgba(255, 255, 255, 0.07);
+                                }
+                            }
+                        }
+                    }
+                }
+                &:hover {
+                    svg {
+                        path {
+                            fill: #564ECE;
+                        }
+                    }
+                    .drop-down-cont {
+                        padding-left: 100px;
+                        .hover-open-dropdown {
+                            opacity: 1;
+                            width: 250px;
+                            transition: 0.5s;
+                            height: auto;
+                            left: 100%;
+                            ul {
+                                li {
+                                    list-style: none;
+                                    display: block;
+                                    a {
+                                        padding: 1rem 2rem;
+                                        display: block;
+                                        font-size: 16px;
+                                        transition: 0.5s;
+                                        svg {
+                                            path {
+                                                fill: #fff;
+                                            }
+                                        }
+                                        &:hover {
+                                            color: #564ECE;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            h3 {
+                font-weight: 600;
+                font-size: 17px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-right: 2rem;
+                .user-pro-pic {
+                    border-radius: 15px;
+                    display: inline-block;
+                    background-color: #564ECE;
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+        .wallet-address {
+            font-weight: 500;
+            font-size: 16px;
+            color: #4d4e57;
+            span {
+                // font-weight: 500;
+                // font-size: 16px;
+                // color: #564ECE;
+            }
+        }
+        // MY CRYPTO
+        .my-crypto {
+            .balances {
+                .bal {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 1rem 2rem;
+                    font-weight: 500;
+                    font-size: 16px;
+                    border-bottom: 2px solid rgba(28, 26, 56, 0.58);
+                    .amount {
+                        font-weight: 600;
+                        font-size: 21px;
+                        color: #564ECE;
+                    }
+                    &:nth-last-child(1) {
+                        border-bottom: 0px solid rgba(28, 26, 56, 0.58);
+                    }
+                }
+            }
+        }
+        // MY BUCKES
+        .my-buckes {
+            .balances {
+                .bal {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 1rem 2rem;
+                    font-weight: 500;
+                    font-size: 16px;
+                    border-bottom: 2px solid rgba(28, 26, 56, 0.58);
+                    .amount {
+                        font-weight: 600;
+                        font-size: 21px;
+                        color: #564ECE;
+                    }
+                    &:nth-last-child(1) {
+                        border-bottom: 0px solid rgba(28, 26, 56, 0.58);
+                    }
+                }
+            }
+            .liat-cart-slide {
+                // height: calc(100vh - 480px);
+                overflow: auto;
+            }
+            .collecton {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                .images {
+                    position: relative;
+                    padding-right: 2rem;
+                    img {
+                        width: 120px;
+                        position: relative;
+                        z-index: 2;
+                        &:nth-child(2) {
+                            position: absolute;
+                            z-index: 1;
+                            right: -1.5rem;
+                            transform: scale(0.9)
+                        }
+                    }
+                    &.large-img {
+                        img {
+                            width: 150px;
+                        }
+                    }
+                }
+                .details {
+                    text-align: center;
+                    .amount {
+                        display: block;
+                        font-weight: 600;
+                        font-size: 21px;
+                    }
+                    .collection-link {
+                        display: block;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 44px;
+                        /* or 244% */
+                        text-align: center;
+                        text-decoration-line: underline;
+                        color: #564ECE;
+                    }
+                    .more-link {
+                        display: block;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 17px;
+                        /* or 106% */
+                        text-align: center;
+                        text-decoration-line: underline;
+                        color: #FFFFFF;
+                    }
+                }
+                &.no-bucks {
+                    .images {
+                        padding-right: 2rem;
+                        img {
+                            width: 175px;
+                        }
+                    }
+                    .details {
+                        &.no-bucks-msg {
+                            color: rgba(255, 255, 255, 0.38);
+                            text-align: left !important;
+                        }
+                    }
+                }
+            }
+        }
+        // FOOTER
+        .wallet-slide-footer {
+            // background: yellow;
+            flex-grow: 1;
+            // flex-shrink: 1;
+            .navbar-nav {
+                &.nav-pills {
+                    .nav-item {
+                        a.nav-link {
+                            padding: 0.75rem 2rem;
+                            margin-left: 0px !important;
+                            color: rgba(255, 255, 255, 0.50);
+                            cursor: pointer;
+                            transition: 0.3s;
+                            &:hover {
+                                color: #FFFFFF;
+                                transition: 0.3s;
+                                svg g {
+                                    transition: 0.3s;
+                                    opacity: 1;
+                                }
+                            }
+                            &.active {
+                                color: #FFFFFF;
+                                background: rgba(86, 78, 206, 0.13);
+                                svg g {
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .logout {
+                padding: 0.75rem 2rem;
+                margin-left: 0px !important;
+                color: rgba(255, 255, 255, 0.50);
+                text-decoration: none;
+                &:hover {
+                    color: #fff!important;
+                    transition: 0.3s;
+                    // background: rgba(86, 78, 206, 0.13)!important;
+                }
+            }
+        }
+    }
+    &.wallet-none {
+        right: -400px;
+        transition: 0.8s;
+        width: 0;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .mob-none {
+        display: none;
+    }
+    .wallet-nav-item {
+        &:hover {
+            .hover-open-dropdown {
+                width: 248px;
+                height: 44px;
+                a {
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .wallet-slide-right {
+        .wallet-bg {
+            width: 100%;
+            .wallet-heading h3 {
+                font-weight: normal;
+                font-size: 14px;
+            }
+            .wallet-address {
+                font-size: 10px;
+            }
+            .text-end.need-text {
+                font-size: 14px;
+            }
+            .main-heading h1 {
+                font-size: 20px;
+            }
+            .liat-wallet-slide {
+                height: calc(100vh - 433px);
+                .text-wallet-list {
+                    h6 {
+                        font-size: 14px;
+                    }
+                    .quantity {
+                        font-size: 12px;
+                        .form-select {
+                            width: 72px;
+                            padding: 0px 16px;
+                        }
+                    }
+                    .wallet-price {
+                        font-size: 16px;
+                    }
+                    .eth-text {
+                        font-size: 16px;
+                    }
+                }
+            }
+            .summary .sumary-text {
+                font-size: 13px;
+            }
+        }
+    }
+}

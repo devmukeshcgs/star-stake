@@ -1,0 +1,122 @@
+//MODAL
+.modal-btn {
+    cursor: pointer;
+}
+
+.modal-backdrop {
+    &.show {
+        opacity: 0.8;
+    }
+}
+
+.text-w {
+    color: $white-color;
+}
+
+.w-label {
+    color: #B1B1B1;
+    font-weight: 500;
+    font-size: 15px;
+    color: #B1B1B1;
+}
+
+.detail-img {
+    position: relative;
+    svg {
+        width: 115%;
+        height: 100%;
+    }
+}
+
+.modal {
+    &.share-modal {
+        .modal-dialog {
+            .modal-content {
+                background: #16122A !important;
+            }
+        }
+    }
+    .modal-dialog {
+        .modal-content {
+            background: $dark1-color;
+            box-shadow: 6px 19px 62px -8px rgb(0 0 0 / 13%);
+            border-radius: 31px;
+            // border: 1px solid $bluelight-color;
+            .modal-header {
+                border-bottom: 0px solid #dee2e6;
+                .modal-title {
+                    position: relative;
+                    .modal-back {
+                        cursor: pointer;
+                        left: 1rem;
+                        position: absolute;
+                    }
+                    width: 100%;
+                    font-size: 14px;
+                    color: $white-color;
+                    button {
+                        display: inline-block;
+                    }
+                    h4 {
+                        margin-left: 0px !important;
+                        margin: 0px;
+                        font-size: 21px;
+                    }
+                }
+            }
+            .modal-body {
+                .deposit-eth {
+                    font-weight: 500;
+                    font-size: 16px;
+                    text-align: center;
+                    color: #FFFFFF;
+                }
+                p {
+                    font-size: 16px;
+                    &.text-w {
+                        color: $white-color;
+                    }
+                    color: #4d4e57;
+                    a {
+                        color: $blue-light-color;
+                    }
+                }
+                a {
+                    color: $white-color;
+                    text-decoration: none;
+                }
+                .address-box {
+                    border-radius: 31px;
+                    border: 2px solid $blue-light-color;
+                }
+                .err-msg {
+                    font-size: 21px;
+                    text-align: center;
+                    color: #FFFFFF;
+                }
+            }
+            .modal-footer {}
+        }
+    }
+}
+
+.tran {
+    border-radius: 6px;
+    overflow: hidden;
+    // border: 1px solid $blue-light-color;
+    .address {
+        background: #232141;
+        p {
+            color: $white-color !important;
+        }
+    }
+    .asset {
+        background: #141727;
+        p {
+            color: $white-color !important;
+        }
+        small {
+            color: #656565;
+        }
+    }
+}

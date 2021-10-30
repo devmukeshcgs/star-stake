@@ -1,0 +1,115 @@
+//-----------list  collection css ---------------//
+.bucks-slider {
+    .pager {}
+    .bucks-slider-box {
+        width: 214px;
+        .img-collection {
+            >svg {
+                width: 100%;
+                height: auto;
+            }
+            &.next-arrow-cont {
+                height: 100%;
+                .next-arrow {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 25px;
+                    top: 50% !important;
+                    left: 50% !important;
+                    margin-top: -25px;
+                    margin-left: -25px;
+                    background-color: white;
+                }
+            }
+        }
+        .img-hover-click {
+            background: linear-gradient(162.24deg, rgba(157, 153, 208, 0.82) 3.31%, rgba(64, 51, 255, 0.82) 97.08%);
+            opacity: 0;
+            transition: 0.2s;
+            a {
+                text-decoration: none;
+                p {
+                    font-weight: 500;
+                    font-size: 16px;
+                    color: $white-color;
+                }
+            }
+        }
+        &:hover {
+            .img-hover-click {
+                opacity: 1;
+            }
+        }
+        .collection-text {
+            h5 {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 20px;
+                color: $white-color;
+            }
+            .price {
+                width: 69px;
+                height: 34px;
+                background: $gray9-color;
+                border-radius: 26px;
+                font-weight: 500;
+                font-size: 16px;
+                color: $blue8-light-color;
+            }
+            .qty {
+                font-weight: 500;
+                font-size: 16px;
+                color: $gray10-color;
+            }
+            hr {
+                background: $gray8-color;
+            }
+            h6 {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 20px;
+                color: $white-color;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1260px) {
+    .bucks-slider {
+        .bucks-slider-box {
+            width: 194px;
+            .img-collection {
+                svg {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .collection-text h5 {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .mob-wrap {
+        flex-wrap: wrap;
+    }
+    .bucks-slider {
+        .bucks-slider-box {
+            width: 48%;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .bucks-slider .bucks-slider-box .collection-text h5 {
+        font-size: 12px;
+    }
+    .navbar-brand svg {
+        width: 130px;
+    }
+    .side-bar-nav .mob-btn-side-nav {
+        left: 168px;
+    }
+}

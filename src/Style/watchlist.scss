@@ -1,0 +1,93 @@
+.stake-watchlist {
+    .watchlist-section {
+        h4 {
+            font-weight: 600 !important;
+            font-size: 30px !important;
+            line-height: 38px;
+            color: $white-color;
+        }
+    }
+}
+
+.h-30 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.watchlist-cards {
+    .watchlist-card-box {
+        margin-bottom: 2rem;
+        .br-19 {
+            background: #04050A;
+            box-shadow: 0px 4px 70px rgba(14, 13, 30, 0.86);
+            overflow: hidden;
+            border-radius: 19px;
+        }
+        .img-watchlist {
+            img {
+                width: 100%;
+            }
+        }
+        .watchlist-text {
+            position: relative;
+            .category {
+                // font-style: italic;
+                font-size: 16px;
+                position: absolute;
+                background: $blue2-light-color;
+                color: $white-color;
+                border-radius: 11px;
+                top: -1rem;
+            }
+            .stake-name {
+                font-size: 18px;
+                color: $white-color;
+                letter-spacing: 1px;
+            }
+            .outof {
+                min-width: 100px;
+                // background-color: $blue2-light-color;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                text-align: right;
+                color: rgba(255, 255, 255, 0.28);
+            }
+            .art-by {
+                font-size: 16px;
+                color: rgba(255, 255, 255, 0.28);
+            }
+            .art-name {
+                font-size: 18px;
+                text-align: right;
+                color: $blue2-light-color;
+            }
+            .time {
+                color: rgba(255, 255, 255, 0.28);
+                flex: 1;
+            }
+            .cta {
+                flex: 1;
+                cursor: pointer;
+                font-size: 16px;
+                text-align: center;
+                color: $white-color;
+                border: 1px solid $blue2-light-color;
+                box-sizing: border-box;
+                border-radius: 22px;
+                &:hover {
+                    background-color: $blue2-light-color;
+                    color: #ffffff;
+                }
+            }
+            @media screen and (max-width: 768px) {
+                .mob-center {
+                    text-align: center;
+                }
+                .mob-col {
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}

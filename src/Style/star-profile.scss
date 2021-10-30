@@ -1,0 +1,773 @@
+.star-profile {}
+
+// @media screen and (max-width: 991px) {}
+// @media screen and (max-width: 800px) {}
+// @media screen and (max-width: 768px) {}
+// @media screen and (max-width: 600px) {}
+// @media screen and (max-width: 500px) {}
+.star-profile-section {
+    margin-top: 56px;
+    .header-sec {
+        height: calc(100vh - 128px);
+        max-height: 800px;
+        @media screen and (max-width: 991px) {
+            // height: auto;
+            height: 50vh;
+            max-height: 100vh;
+        }
+    }
+    .start-img {
+        background-image: url('../img/StarProfile/star-img.png');
+        background-position: center, center;
+        // height: calc(100vh - 128px);
+        // max-height: 800px;
+        flex: 1;
+        background-size: cover;
+        position: relative;
+        bottom: 0px;
+        height: 100%;
+        img {
+            height: 100%;
+        }
+        @media screen and (max-width: 991px) {
+            max-height: 100vh;
+        }
+    }
+    .start-details {
+        flex: 1;
+        margin: 3rem 8rem;
+        height: 100%;
+        .start-pro {
+            .pro-pic {
+                .pic {
+                    overflow: hidden;
+                    border-radius: 40px;
+                    border: 2px solid #564ECE;
+                    width: 65px;
+                    height: 65px;
+                    img {
+                        max-width: 100%;
+                    }
+                }
+            }
+            .pro-name {
+                font-size: 30px;
+                color: #FFFFFF;
+                .wallet-addr {
+                    font-weight: 500;
+                    font-size: 16px;
+                    color: #505050;
+                }
+            }
+        }
+        .pro-bio {
+            font-size: 16px;
+            line-height: 32px;
+            font-weight: normal;
+            letter-spacing: 1px;
+            color: rgba(239, 233, 255, 0.6);
+        }
+        .nft-status {
+            color: #FFFFFF;
+            .text {
+                color: #505050;
+                font-size: 14px;
+            }
+            .count {
+                font-size: 32px;
+            }
+            .nft-minted {
+                .text {
+                    color: rgba(239, 233, 255, 0.6);
+                    font-size: 14px;
+                }
+                .count {
+                    font-size: 32px;
+                }
+            }
+            .staked-fans-count {
+                .text {
+                    color: rgba(239, 233, 255, 0.6);
+                    font-size: 14px;
+                }
+                .count {
+                    font-size: 32px;
+                }
+            }
+        }
+        .cta {}
+        .info {
+            color: #505050;
+            font-size: 18px;
+            position: relative;
+            .svg-q {
+                top: -8px;
+                position: relative;
+            }
+        }
+        .stake-my-iNFTs-link {
+            button {
+                text-decoration: none;
+                color: #564ECE;
+                font-size: 20px;
+                &:hover {
+                    color: #ffffff;
+                }
+                &:focus {
+                    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+                }
+            }
+        }
+        @media screen and (max-width: 1024px) {
+            margin: 3rem 6rem;
+        }
+        @media screen and (max-width: 991px) {
+            margin: 3rem 3rem;
+        }
+    }
+}
+
+.bottom-band {
+    background: rgba(32, 32, 32, 0.42);
+    position: relative;
+    z-index: 1;
+    background: #0f1013;
+    margin-bottom: 2rem;
+    .logo-music-profile {
+        font-style: italic;
+        font-weight: 300;
+    }
+    .cta {
+        >div {
+            padding: 1rem;
+            font-size: 18px;
+            color: rgba(239, 233, 255, 0.6);
+            cursor: pointer;
+            &:hover {
+                color: #564ECE;
+            }
+            .share-icon {
+                width: 24px;
+                path {
+                    fill: #564ECE!important;
+                }
+            }
+            .mint-icon {
+                width: 24px;
+                path {
+                    fill: #564ECE!important;
+                }
+            }
+            .bucks-icon {
+                width: 24px;
+                path {
+                    fill: #564ECE!important;
+                }
+            }
+            .stack-fan-icon {
+                width: 24px;
+                path {
+                    fill: #564ECE!important;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 991px) {
+        .logo-music-profile {
+            padding: 2rem 0;
+            text-align: center;
+        }
+    }
+}
+
+.about-pro {
+    position: relative;
+    // margin: 100px;
+    margin-top: 150px;
+    .about-img {
+        z-index: 10;
+        position: relative;
+        top: -3rem;
+        right: -150px;
+        flex: 1;
+        img {
+            border-radius: 16px;
+            overflow: hidden;
+            max-width: 100%;
+        }
+    }
+    .about-text {
+        position: relative;
+        .about-bg {
+            background-image: url('../img/about-bg.png');
+            background-position: center center;
+            position: absolute;
+            z-index: -1;
+            left: 0px;
+            width: 100%;
+            right: 50px;
+            bottom: 0%;
+            top: 0px;
+            max-width: 100%;
+            margin: auto;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            pointer-events: none;
+            -webkit-filter: blur(10px);
+            filter: blur(10px);
+            -webkit-animation: gradient_fadein__1rIK_ .3s ease forwards;
+            animation: gradient_fadein__1rIK_ .3s ease forwards;
+        }
+        height: 100%;
+        flex: 1;
+        padding: 50px;
+        padding-left: 150px;
+        background: #0B0D19;
+        border-radius: 24px;
+        h3 {
+            font-size: 30px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 30px;
+            color: rgba(222, 217, 217, 0.58);
+        }
+        .social {
+            a {
+                padding: 1rem;
+            }
+        }
+    }
+    @media screen and (max-width: 768px) {
+        margin-top: 0px;
+        .about-img {
+            top: 0rem;
+            right: -50px;
+            margin: 0px !important;
+        }
+        .about-text {
+            padding: 25px;
+            padding-left: 50px;
+        }
+    }
+    @media screen and (max-width:$sm) {
+        margin-top: 0px;
+        .about-img {
+            top: 3rem;
+            right: 0px;
+            margin: 1rem !important;
+        }
+        .about-text {
+            margin: 2rem !important;
+            margin-top: 0rem !important;
+            padding: 1rem;
+            padding-left: 1rem;
+            z-index: 1;
+            .social {
+                a {
+                    padding: 0.5rem;
+                }
+            }
+        }
+    }
+}
+
+.my-nft-section {
+    // .my-nft-buks-cards {
+    //     .my-nft-buks-card {
+    //         max-width: 200px;
+    //         font-size: 16px;
+    //         .img {
+    //             position: relative;
+    //             cursor: pointer;
+    //             .hover {
+    //                 opacity: 0;
+    //                 position: absolute;
+    //                 top: 0;
+    //                 left: 0;
+    //                 right: 0;
+    //                 bottom: 0;
+    //                 background: linear-gradient(162.24deg, rgba(157, 153, 208, 0.82) 3.31%, rgba(64, 51, 255, 0.82) 97.08%);
+    //             }
+    //             &:hover {
+    //                 .hover {
+    //                     opacity: 1;
+    //                 }
+    //             }
+    //             img {
+    //                 max-width: 100%;
+    //             }
+    //         }
+    //         .rare {
+    //             color: #564ECE;
+    //         }
+    //         .text {
+    //             color: #FFFFFF;
+    //         }
+    //         .amount-cta {
+    //             border-top: 1.2px solid rgba(76, 74, 106, 0.58);
+    //             .amount {
+    //                 color: #564ECE;
+    //             }
+    //             .cta {
+    //                 cursor: pointer;
+    //                 padding: 0.4rem 1rem;
+    //                 background: rgba(196, 196, 196, 0.1);
+    //                 border-radius: 18px;
+    //                 color: rgba(255, 255, 255, 0.5);
+    //                 &:hover {
+    //                     color: #FFFFFF;
+    //                     background: #564ECE;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+    .collection-list {
+        .collection-list-box {
+            width: 200px;
+            .img-hover-click {
+                background: linear-gradient(162.24deg, rgba(157, 153, 208, 0.82) 3.31%, rgba(64, 51, 255, 0.82) 97.08%);
+                opacity: 0;
+                transition: 0.2s;
+                a {
+                    text-decoration: none;
+                    p {
+                        font-weight: 500;
+                        font-size: 16px;
+                        color: $white-color;
+                    }
+                }
+            }
+            .img-collection {
+                svg {
+                    width: 100%;
+                }
+                &:hover {
+                    .img-hover-click {
+                        opacity: 1;
+                    }
+                }
+            }
+            .collection-text {
+                .name-br {
+                    font-weight: 500;
+                    font-size: 16px;
+                    color: #8781E0;
+                }
+                h5 {
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: $white-color;
+                }
+                .price {
+                    width: 69px;
+                    height: 34px;
+                    background: $gray9-color;
+                    border-radius: 26px;
+                    font-weight: 500;
+                    font-size: 16px;
+                    color: $blue8-light-color;
+                }
+                .qty {
+                    font-weight: 500;
+                    font-size: 16px;
+                    color: $gray10-color;
+                }
+                hr {
+                    background: $gray8-color;
+                }
+                h6 {
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: $white-color;
+                }
+            }
+            .amount-cta {
+                border-top: 1.2px solid rgba(76, 74, 106, 0.58);
+                .amount {
+                    color: #564ECE;
+                }
+                .cta {
+                    cursor: pointer;
+                    padding: 0.4rem 1rem;
+                    background: rgba(196, 196, 196, 0.1);
+                    border-radius: 18px;
+                    color: rgba(255, 255, 255, 0.5);
+                    &:hover {
+                        color: #FFFFFF;
+                        background: #564ECE;
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 1260px) {
+        .collection-list {
+            .collection-list-box {
+                width: 194px;
+                .img-collection {
+                    svg {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+                .collection-text h5 {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 991px) {
+        .mob-wrap {
+            flex-wrap: wrap;
+        }
+        .collection-list {
+            .collection-list-box {
+                width: 48%;
+            }
+        }
+    }
+    @media screen and (max-width: 400px) {
+        .collection-list .collection-list-box .collection-text h5 {
+            font-size: 12px;
+        }
+        .navbar-brand svg {
+            width: 130px;
+        }
+        .side-bar-nav .mob-btn-side-nav {
+            left: 168px;
+        }
+    }
+}
+
+.why-shoud-purchase {
+    .card {
+        background-color: transparent;
+        span {
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 38px;
+            text-align: center;
+            color: #564ECE;
+        }
+        p {
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 30px;
+            color: #FFFFFF;
+            letter-spacing: 1px;
+        }
+        .cta {
+            .btn {
+                margin-right: 2rem !important;
+            }
+        }
+    }
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url('../img/svg/accordion-down-arrow.svg') !important;
+    transform: rotate(0deg);
+    opacity: 1;
+}
+
+.accordion-button::after {
+    background-image: url('../img/svg/accordion-down-arrow.svg') !important;
+    transform: rotate(180deg);
+    opacity: 0.7;
+}
+
+.png-devider {
+    width: 100%;
+    position: relative;
+    bottom: -1px;
+    img {
+        width: 125%;
+    }
+    .devider-logo {
+        position: absolute;
+        background: linear-gradient(136.24deg, #564ECE 1.34%, #ADA7FF 111.12%, #756CFF 111.13%) !important;
+        border-radius: 8px;
+        top: 50%;
+        left: 75%;
+    }
+    @media screen and (max-width:$sm) {
+        img {
+            width: 125%;
+        }
+        .devider-logo {
+            margin-top: -10px;
+        }
+    }
+}
+
+.bg-devider {
+    position: relative;
+    top: 102px;
+    &::after {
+        content: '';
+        position: absolute;
+        right: 0px;
+        height: 2px;
+        width: 200%;
+        background: #564ecd;
+        top: 134px;
+        left: 50%;
+        margin-top: -1px;
+        z-index: 99;
+    }
+}
+
+.stardom-section {
+    overflow: hidden;
+    background: rgb(11, 13, 25);
+    background: -moz-linear-gradient(90deg, rgba(11, 13, 25, 1) 0%, rgba(28, 25, 69, 1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(11, 13, 25, 1) 0%, rgba(28, 25, 69, 1) 100%);
+    background: linear-gradient(90deg, rgba(11, 13, 25, 1) 0%, rgba(28, 25, 69, 1) 100%);
+    >div {
+        overflow: hidden;
+    }
+    .stars-img-bg {
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        z-index: 0;
+        margin: auto;
+        user-select: none;
+        pointer-events: none;
+        animation: 0.3s ease 0s 1 normal forwards running gradient_fadein__1rIK_;
+        img {
+            height: 100%;
+        }
+    }
+    .startdom-text {
+        padding: 3rem;
+        padding-left: 5rem;
+        z-index: 11;
+        position: relative;
+        .cta {
+            .link-white {
+                padding-left: 1rem;
+                color: #FFFFFF !important;
+            }
+        }
+    }
+    h4 {
+        font-size: 30px;
+        font-weight: normal;
+        color: #FFFFFF;
+    }
+    p {
+        font-size: 16px;
+        color: rgba(222, 217, 217, 0.58);
+        b {
+            color: #FFFFFF;
+            font-weight: normal;
+        }
+    }
+    .stars-img {
+        width: 100%;
+        height: 100%;
+        img {
+            height: 100%;
+        }
+    }
+    @media screen and (max-width:$sm) {
+        .stars-img {
+            width: 100%;
+            height: 100%;
+            img {
+                height: auto;
+                width: 100%;
+            }
+        }
+    }
+}
+
+.faq-staking-payments {
+    .faq {
+        h1 {
+            margin-bottom: 3rem;
+            font-weight: 600;
+            font-size: 43px;
+            color: #000000;
+        }
+    }
+    .stak-payment {
+        h1 {
+            margin-bottom: 3rem;
+            font-weight: 600;
+            font-size: 43px;
+            color: #000000;
+        }
+    }
+    .accordion {
+        .accordion-item {
+            margin-bottom: 3.5rem;
+            // border: 0px solid #ccc;
+            .accordion-header {
+                button {
+                    font-size: 20px;
+                    font-weight: 500;
+                    // box-shadow: inset 0 0px 0 rgb(0 0 0 / 0%);
+                    color: #616161;
+                }
+                .accordion-button:not(.collapsed) {
+                    color: #000000;
+                    background-color: #ffffff;
+                    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 0%);
+                }
+            }
+            .accordion-collapse {
+                &.collapse {
+                    &.show {}
+                }
+                .accordion-body {
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 33px;
+                    color: #818181;
+                }
+            }
+        }
+    }
+}
+
+.star-footer {
+    .subscribe {
+        form {
+            input {
+                background: rgba(196, 196, 196, 0.1);
+                border-radius: 28.5px;
+                border: 0px solid transparent;
+                padding: 1rem 2rem;
+                max-width: 350px;
+            }
+        }
+    }
+    .social-links {
+        .social {
+            a {
+                padding: 8px;
+                background: #564ecd;
+                border-radius: 4px;
+                margin: 4px;
+                &:hover {
+                    background: transparent;
+                }
+            }
+        }
+    }
+    .f-menus {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 33px;
+        color: #fff;
+        li {
+            list-style: none;
+            a {
+                color: rgba(255, 255, 255, 0.63);
+                text-decoration: none;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                display: block;
+                padding: 0.75rem 0.5rem;
+            }
+        }
+    }
+    .text-right {
+        text-align: right;
+    }
+    .tnc {
+        border-top: 1.2px solid #939393;
+        font-size: 18px;
+        a {
+            padding-right: 1rem;
+            text-decoration: none;
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.63) !important;
+            &:hover {
+                color: #FFFFFF!important;
+            }
+        }
+    }
+}
+
+.star-profile {
+    .modal {
+        .modal-dialog {
+            .modal-content {
+                background: #16122A !important;
+            }
+        }
+    }
+}
+
+.shareModal {
+    .modal-dialog {
+        .modal-content {
+            background: #16122A !important;
+        }
+    }
+    .closebtn {
+        cursor: pointer;
+        position: absolute;
+        right: 10px;
+    }
+    .share-modal-text {
+        font-weight: normal;
+        font-size: 26px;
+        color: #FFFFFF;
+    }
+    .social-links {
+        .social {
+            a {
+                padding: 8px;
+                background: #564ecd;
+                border-radius: 4px;
+                margin: 4px;
+                &:hover {
+                    background: transparent;
+                }
+            }
+        }
+    }
+    .form-control:disabled,
+    .form-control[readonly] {
+        background-color: rgba(255, 255, 255, 0.06);
+        opacity: 1;
+    }
+    input {
+        background: rgba(255, 255, 255, 0.06);
+        border: 0px;
+        border-radius: 0px;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 39px;
+        color: #FFFFFF;
+    }
+    .input-group-text {
+        border-radius: 0px;
+        font-weight: 300;
+        border: 0px;
+        background: #564ECE;
+        font-size: 20px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .input-group-text {
+        cursor: pointer;
+    }
+    .form-text {
+        a {
+            color: #564ECE !important;
+            text-decoration: underline!important;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 338 338" width="338" height="338">
+	<title>Group 511-svg</title>
+	<defs>
+		<linearGradient id="grd1" gradientUnits="userSpaceOnUse"  x1="169" y1="0" x2="169" y2="223.652">
+			<stop offset="0" stop-color="#d7d5fa"  />
+			<stop offset="1" stop-color="#c9ffe2" stop-opacity="0" />
+		</linearGradient>
+		<linearGradient id="grd2" gradientUnits="userSpaceOnUse"  x1="169.954" y1="40.297" x2="170.946" y2="169.202">
+			<stop offset="0" stop-color="#363085"  />
+			<stop offset="1" stop-color="#052e18" stop-opacity="0" />
+		</linearGradient>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: none;stroke: url(#grd1);stroke-width: 10 } 
+		.shp1 { fill: url(#grd2) } 
+	</style>
+	<path id="Layer" class="shp0" d="M169 333C78.31 333 5 259.69 5 169C5 78.31 78.31 5 169 5C259.69 5 333 78.31 333 169C333 259.69 259.69 333 169 333Z" />
+	<path id="Layer" class="shp1" d="M49.01 209.86C42.44 190.77 40.48 170.4 43.28 150.41C46.09 130.42 53.59 111.38 65.17 94.84C76.75 78.31 92.08 64.75 109.9 55.27C127.72 45.79 147.54 40.67 167.72 40.32C187.91 39.96 207.88 44.39 226.03 53.24C244.17 62.09 259.96 75.11 272.11 91.23C284.26 107.35 292.42 126.12 295.93 146C299.43 165.88 298.18 186.31 292.28 205.61L169.95 168.21L49.01 209.86Z" />
+</svg>
